@@ -1,0 +1,53 @@
+---
+title: "ggradar"
+output:
+  github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, dpi = 300, message = FALSE, warning = FALSE, error = FALSE)
+```
+
+This `ggradar` is modified from the [ggradar](https://github.com/ricardo-bion/ggradar), which allows you to build radar charts with multiple gridline.
+
+## Install `ggradar`
+
+```{r, eval=FALSE}
+devtools::install_github("1156054203/ggradar", 
+                          dependencies = TRUE)
+```
+
+## Use `ggradar`
+
+```{r, fig.width=15, fig.height=10}
+library(ggradar)
+library(dplyr)
+library(scales)
+library(tibble)
+
+set.seed(21)
+sampleA <- sample(seq(1,23),size=23)
+sampleB <- sample(seq(1,23),size=23)
+data <- data.frame(group=c('sampleA','sampleB'),
+                   t(data.frame(sampleA=sampleA,sampleB=sampleB)))
+chroms <- paste0('chr',c(seq(1:22),'X'))
+colnames(data)[-1] <- chroms
+```
+
+```{r, echo = FALSE}
+knitr::kable(data[,1:10],format = "markdown")
+```
+
+```{r}
+ggradar2(data,all.radar=seq(1:23),axis.label.size=3.5,grid.label.size=4,group.point.size=1,
+         group.line.width=0.6, legend.position='right')
+```
+
+## Custom config
+
+In addition to `all.radar` and `all.label`, other parameters are consistent with the original package [ggradar](https://github.com/ricardo-bion/ggradar).
+Note:
+`all.radar`: vector, each value is used to specify the gridline.
+`all.label`: vector, each value is used to specify the label for gridline, default is value of `all.radar`.
+`gridline.min.linetype`: used to specify gridline style.
+`gridline.min.colour`: used to specify gridline colour.
