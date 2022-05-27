@@ -45,9 +45,9 @@ ggradar2(data,all.radar=seq(1:23),axis.label.size=3.5,grid.label.size=4,group.po
 
 ## Custom config
 
-In addition to `all.radar` and `all.label`, other parameters are consistent with the original package [ggradar](https://github.com/ricardo-bion/ggradar).
-Note:
-`all.radar`: vector, each value is used to specify the gridline.
-`all.label`: vector, each value is used to specify the label for gridline, default is value of `all.radar`.
-`gridline.min.linetype`: used to specify gridline style.
-`gridline.min.colour`: used to specify gridline colour.
+In addition to `all.radar` and `all.label`, other parameters are consistent with the original package [ggradar](https://github.com/ricardo-bion/ggradar).  
+Note:  
+`all.radar`: vector, each value is used to specify the gridline.  
+`all.label`: vector, each value is used to specify the label for gridline, default is value of `all.radar`.  
+`gridline.min.linetype`: used to specify gridline style.  
+`gridline.min.colour`: used to specify gridline colour.  
