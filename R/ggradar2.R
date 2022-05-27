@@ -46,7 +46,7 @@
 #' @import ggplot2
 #' @return a ggplot object
 #'
-#' @name ggradar-package
+#' @name ggradar2
 #'
 #' @export
 #'

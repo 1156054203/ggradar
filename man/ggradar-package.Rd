@@ -156,7 +156,7 @@ ggradar(mtcars_radar)
 }
 }
 \author{
-\strong{Maintainer}: Ricardo Bion \email{ricardo.bion@airbnb.com}
+\strong{Maintainer}: chenyl chenyl \email{1156054203@qq.com}
 
 }
 \keyword{internal}

@@ -38,7 +38,7 @@ ggradar2(data,all.radar=seq(1:23),axis.label.size=3.5,grid.label.size=4,group.po
          group.line.width=0.6, legend.position='right')
 ```
 
-![](tests/figure_test.png)<!-- -->
+![](tests/figure_test.png){:height="60%" width="60%"}<!-- -->
 
 ## Custom config
 

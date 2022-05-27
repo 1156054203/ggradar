@@ -2,10 +2,10 @@ Package: ggradar
 Title: Create radar charts using ggplot2
 Version: 0.2
 Authors@R:
-    person(given = "Ricardo",
-           family = "Bion",
+    person(given = "chenyl",
+           family = "chenyl",
            role = c("aut", "cre"),
-           email = "ricardo.bion@airbnb.com")
+           email = "1156054203@qq.com")
 Description: This package exports the functionality of ggplot2 to create radar charts.
 License: GPL
 Imports:
